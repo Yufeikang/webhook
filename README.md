@@ -1,13 +1,9 @@
-# 明道通途车联网平台-服务端
+# express template
 ## 配置
 > 环境启动依赖配置文件，完成一下配置在 .env 文件中
 
 ```
 PORT=8000
-DB_PATH=/tmp/mogodb
-SERVER_URL=http://localhost:8000/api
-APP_ID="2da231Hs213"
-MASTER_KEY="Nrvbdsa76dsarKju"
 # NODE_NEV=develop
 NODE_NEV=production
 ```
