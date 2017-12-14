@@ -1,7 +1,7 @@
 {
-  "name": "express-template",
+  "name": "webhook",
   "version": "1.0.0",
-  "description": "express template",
+  "description": "webhook",
   "main": "src/app.js",
   "author": "kang <kyf0722@gmail.com>",
   "license": "MIT",
@@ -17,6 +17,7 @@
     "run": "pre-commit-msg, lint"
   },
   "dependencies": {
+    "body-parser": "^1.18.2",
     "dotenv": "^4.0.0",
     "express": "^4.16.2",
     "log4js": "^2.4.1"

@@ -6,19 +6,16 @@
 PORT=8000
 # NODE_NEV=develop
 NODE_NEV=production
+SHELL_DIR=/shells/
 ```
 
-## 运行（docker）
+## 编译（docker）
 ```
-docker-compose up
-```
-
-## 重新编译并运行
-```
-docker-compose up --build
+docker build -t webhook github.com/Yufeikang/webhook.git
 ```
 
-## 运行在开发模式
+## 运行
 ```
-docker-compose -f docker-compose-dev.yml up 
+docker run --name webhook -d -p 8000:8000 -v $PWD/webhook_shells:/shells/ -v $PWD/.env:/app/.env webhook
 ```
+
